@@ -7,7 +7,7 @@ Advantages:
 	1. Memory Efficient
 	2. Can be compounded together
 Watch-out:
-	1. Stateful
+	1. Stateful. Not to use them more than once.
 '''
 
 ## With List Comprehensions
@@ -24,7 +24,7 @@ print(next(iterator))
 print(next(iterator))
 print(next(iterator))
 
-fancy_iterator = ((len(x), len(x)**2) for x in open('Speech.txt'))
+fancy_iterator = ((x, x**2) for x in iterator)
 print(fancy_iterator)
 
 print(next(fancy_iterator))
