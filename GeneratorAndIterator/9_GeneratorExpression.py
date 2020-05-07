@@ -12,12 +12,12 @@ Watch-out:
 
 ## With List Comprehensions
 
-results_list = [len(x) for x in open('Speech.txt')]
+results_list = [len(x) for x in open('../Speech.txt')]
 print(results_list)
 
 ## With Generator Expression. 
 
-iterator = (len(x) for x in open('Speech.txt'))
+iterator = (len(x) for x in open('../Speech.txt'))
 print(iterator)
 
 print(next(iterator))
@@ -30,3 +30,11 @@ print(fancy_iterator)
 print(next(fancy_iterator))
 print(next(fancy_iterator))
 print(next(fancy_iterator))
+
+
+## 
+my_list = [1, 2, 3, 4, 5]
+list_com = [i**2 for i in my_list]
+gen_com = (i**2 for i in my_list)
+print(list_com)
+print(gen_com)
