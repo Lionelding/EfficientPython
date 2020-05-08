@@ -32,7 +32,7 @@ print(next(fancy_iterator))
 print(next(fancy_iterator))
 
 
-## 
+## Another example, list_com 
 my_list = [1, 2, 3, 4, 5]
 list_com = [i**2 for i in my_list]
 gen_com = (i**2 for i in my_list)
